@@ -17,6 +17,10 @@
 		1A18281E28A76AFD008DB610 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1827F428A76AFA008DB610 /* ContentView.swift */; };
 		1A18281F28A76AFD008DB610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1827F528A76AFD008DB610 /* Assets.xcassets */; };
 		1A18282028A76AFD008DB610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1827F528A76AFD008DB610 /* Assets.xcassets */; };
+		1A18283028A83E1F008DB610 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18282F28A83E1F008DB610 /* LoadingBar.swift */; };
+		1A18283128A83E1F008DB610 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18282F28A83E1F008DB610 /* LoadingBar.swift */; };
+		1A18283328A84459008DB610 /* CountTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18283228A84459008DB610 /* CountTimer.swift */; };
+		1A18283428A84459008DB610 /* CountTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18283228A84459008DB610 /* CountTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		1A18281328A76AFD008DB610 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A18281728A76AFD008DB610 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		1A18281928A76AFD008DB610 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		1A18282F28A83E1F008DB610 /* LoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
+		1A18283228A84459008DB610 /* CountTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 				1A1827F328A76AFA008DB610 /* SodaApp.swift */,
 				1A1827F428A76AFA008DB610 /* ContentView.swift */,
 				1A1827F528A76AFD008DB610 /* Assets.xcassets */,
+				1A18282F28A83E1F008DB610 /* LoadingBar.swift */,
+				1A18283228A84459008DB610 /* CountTimer.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -300,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A18281D28A76AFD008DB610 /* ContentView.swift in Sources */,
+				1A18283328A84459008DB610 /* CountTimer.swift in Sources */,
+				1A18283028A83E1F008DB610 /* LoadingBar.swift in Sources */,
 				1A18281B28A76AFD008DB610 /* SodaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A18281E28A76AFD008DB610 /* ContentView.swift in Sources */,
+				1A18283428A84459008DB610 /* CountTimer.swift in Sources */,
+				1A18283128A83E1F008DB610 /* LoadingBar.swift in Sources */,
 				1A18281C28A76AFD008DB610 /* SodaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
