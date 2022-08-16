@@ -21,6 +21,10 @@
 		1A18283128A83E1F008DB610 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18282F28A83E1F008DB610 /* LoadingBar.swift */; };
 		1A18283328A84459008DB610 /* CountTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18283228A84459008DB610 /* CountTimer.swift */; };
 		1A18283428A84459008DB610 /* CountTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18283228A84459008DB610 /* CountTimer.swift */; };
+		1A5B83AE28AC38CE00E95676 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B83AD28AC38CE00E95676 /* info.plist */; };
+		1A8ABC1B28AC3F0D00F23CB0 /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8ABC1A28AC3F0D00F23CB0 /* SpotifyController.swift */; };
+		1A8ABC3428AC49A300F23CB0 /* SpotifyiOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8ABC3328AC49A300F23CB0 /* SpotifyiOS.xcframework */; };
+		1A8ABC3528AC49A300F23CB0 /* SpotifyiOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8ABC3328AC49A300F23CB0 /* SpotifyiOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1A8ABC3228AC48F700F23CB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A8ABC3528AC49A300F23CB0 /* SpotifyiOS.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A1827F328A76AFA008DB610 /* SodaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaApp.swift; sourceTree = "<group>"; };
 		1A1827F428A76AFA008DB610 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +73,10 @@
 		1A18281928A76AFD008DB610 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		1A18282F28A83E1F008DB610 /* LoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
 		1A18283228A84459008DB610 /* CountTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTimer.swift; sourceTree = "<group>"; };
+		1A5B83AD28AC38CE00E95676 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		1A8ABC1928AC3D0B00F23CB0 /* Soda-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Soda-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A8ABC1A28AC3F0D00F23CB0 /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
+		1A8ABC3328AC49A300F23CB0 /* SpotifyiOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpotifyiOS.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8ABC3428AC49A300F23CB0 /* SpotifyiOS.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,17 +115,21 @@
 		1A1827ED28A76AFA008DB610 = {
 			isa = PBXGroup;
 			children = (
+				1A8ABC1928AC3D0B00F23CB0 /* Soda-Bridging-Header.h */,
+				1A5B83AD28AC38CE00E95676 /* info.plist */,
 				1A1827F228A76AFA008DB610 /* Shared */,
 				1A18280128A76AFD008DB610 /* macOS */,
 				1A18280A28A76AFD008DB610 /* Tests iOS */,
 				1A18281628A76AFD008DB610 /* Tests macOS */,
 				1A1827FB28A76AFD008DB610 /* Products */,
+				1A8ABC2E28AC48F600F23CB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		1A1827F228A76AFA008DB610 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1A8ABC1A28AC3F0D00F23CB0 /* SpotifyController.swift */,
 				1A1827F328A76AFA008DB610 /* SodaApp.swift */,
 				1A1827F428A76AFA008DB610 /* ContentView.swift */,
 				1A1827F528A76AFD008DB610 /* Assets.xcassets */,
@@ -149,6 +176,14 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		1A8ABC2E28AC48F600F23CB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8ABC3328AC49A300F23CB0 /* SpotifyiOS.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,12 +194,15 @@
 				1A1827F628A76AFD008DB610 /* Sources */,
 				1A1827F728A76AFD008DB610 /* Frameworks */,
 				1A1827F828A76AFD008DB610 /* Resources */,
+				1A8ABC3228AC48F700F23CB0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Soda (iOS)";
+			packageProductDependencies = (
+			);
 			productName = "Soda (iOS)";
 			productReference = 1A1827FA28A76AFD008DB610 /* Soda.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +295,8 @@
 				Base,
 			);
 			mainGroup = 1A1827ED28A76AFA008DB610;
+			packageReferences = (
+			);
 			productRefGroup = 1A1827FB28A76AFD008DB610 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5B83AE28AC38CE00E95676 /* info.plist in Resources */,
 				1A18281F28A76AFD008DB610 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +352,7 @@
 				1A18283328A84459008DB610 /* CountTimer.swift in Sources */,
 				1A18283028A83E1F008DB610 /* LoadingBar.swift in Sources */,
 				1A18281B28A76AFD008DB610 /* SodaApp.swift in Sources */,
+				1A8ABC1B28AC3F0D00F23CB0 /* SpotifyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +519,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 28Q897DJW4;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,10 +536,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = gix.Soda;
 				PRODUCT_NAME = Soda;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Soda-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -507,6 +556,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 28Q897DJW4;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -519,10 +573,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = gix.Soda;
 				PRODUCT_NAME = Soda;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Soda-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
